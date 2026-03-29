@@ -2,7 +2,7 @@ function Addition() {
     return (
         <section>
             <h2 className="text-sm uppercase tracking-wider border-b border-gray-600 pb-1 mb-3">
-                Додатково
+                Додаткова інформація
             </h2>
 
             <ul className="space-y-2 text-sm text-gray-300">
