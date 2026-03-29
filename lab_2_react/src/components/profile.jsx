@@ -1,10 +1,15 @@
 function Profile() {
     return (
-        <section>
-            <img src="артем.png" alt="Реальна фотографія Артема"/>
-            <h1>Артем Донець</h1>
-            <p>Студент / SOC Analyst</p>
-        </section>
+        <div className="text-center">
+            <img
+                src="артем.png"
+                alt="Реальне фото Артема"
+                className="w-28 h-28 mx-auto rounded-full object-cover border-4 border-gray-700 mb-4"
+            />
+
+            <h1 className="text-lg font-bold">Артем Донець</h1>
+            <p className="text-gray-400 text-sm">Студент / SOC Analyst</p>
+        </div>
     );
 }
 

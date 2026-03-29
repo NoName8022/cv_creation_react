@@ -14,16 +14,23 @@ import Profile from "./components/profile.jsx";
 
 function App() {
     return (
-        <div>
-            <Header />
-            <Profile />
-            <ContactInfo />
-            <About_me />
-            <Education />
-            <Skills />
-            <Experience />
-            <Addition />
-            <Footer />
+        <div className="bg-gray-300 min-h-screen flex justify-center py-10">
+            <div className="w-[210mm] min-h-[297mm] bg-white grid grid-cols-[300px_1fr] shadow-xl">
+
+                <div className="bg-gray-900 text-white p-6 space-y-8">
+                    <Profile />
+                    <ContactInfo />
+                    <Skills />
+                    <Addition />
+                </div>
+
+                <div className="p-10 space-y-8">
+                    <About_me />
+                    <Education />
+                    <Experience />
+                </div>
+
+            </div>
         </div>
     )
 }
