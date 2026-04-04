@@ -61,18 +61,31 @@ loadComments();
 
 setTimeout(() => {
     document.getElementById("modal").classList.remove("hidden");
-}, 60000);
+}, 5000);
 
 document.getElementById("close").addEventListener("click", () => {
     document.getElementById("modal").classList.add("hidden");
 });
 
-/*window.addEventListener("click", (e) => {
-    const modal = document.getElementById("modal");
-    if (e.target === modal) {
-        modal.classList.add("hidden");
-    }
-});*/
+const form = document.getElementById("myForm");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+
+    alert("Ваша форма була успішно відправлена");
+    form.reset();
+    document.getElementById("modal").classList.add("hidden")
+});
 
 const toggleBtn = document.getElementById("themeToggle");
 
