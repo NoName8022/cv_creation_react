@@ -9,7 +9,6 @@ function Footer() {
         if (!stored) {
             const data = {
                 userAgent: navigator.userAgent,
-                platform: navigator.platform,
                 language: navigator.language,
                 cookiesEnabled: navigator.cookieEnabled,
                 online: navigator.onLine,
