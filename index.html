@@ -10,6 +10,7 @@
 
     <header>
         <h1>Резюме: Артем Донець</h1>
+        <button id="themeToggle">🌙</button>
     </header>
 
     <main class="container">
@@ -19,7 +20,7 @@
                  <section>
                     <img src="артем.png" alt="Реальна фотографія Артема">
                     <h1>Артем Донець</h1>
-                    <p>Студент / SOC Analyst</p>
+                    <p class="field">Студент / SOC Analyst</p>
                  </section>
              </div>
 
@@ -81,11 +82,38 @@
                 <p>Не маю досвіду роботи.</p>
             </section>
         </div>
+
     </main>
+
+    <section id="comments">
+        <h2>
+            Коментарі роботодавців
+        </h2>
+    </section>
 
     <footer>
         <p>©2026 Артем. Всі права захищені.</p>
     </footer>
+
+    <div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <span id="close">&times;</span>
+
+        <h2>Зворотній зв'язок</h2>
+
+        <form action="https://formspree.io/f/mykbbggr" id="myForm" method="POST">
+            <input type="text" name="name" placeholder="Введіть ваше ім’я" required>
+            <input type="email" name="email" placeholder="Введіть ваш email" required>
+            <input type="tel" name="phone" placeholder="Введіть ваш телефон">
+            <textarea name="message" placeholder="Коментар"></textarea>
+
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+    </div>
+
+    <noscript>JS не працює</noscript>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
